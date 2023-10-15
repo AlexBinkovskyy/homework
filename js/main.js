@@ -1666,26 +1666,55 @@
 // console.log(allCourses);
 
 
+// const books = [
+//     {
+//       title: "The Last Kingdom",
+//       author: "Bernard Cornwell",
+//       genres: ["adventure", "history"],
+//     },
+//     {
+//       title: "Beside Still Waters",
+//       author: "Robert Sheckley",
+//       genres: ["fiction", "mysticism"],
+//     },
+//     {
+//       title: "Redder Than Blood",
+//       author: "Tanith Lee",
+//       genres: ["horror", "mysticism", "adventure"],
+//     },
+//   ];
+
+//   const allGenres = books.flatMap(book => book.genres);
+//   const uniqueGenres = allGenres.filter((genre, idx, arr) => arr.indexOf(genre) === idx);
+// console.log(allGenres);
+// console.log(uniqueGenres);
+
 
 const books = [
     {
       title: "The Last Kingdom",
       author: "Bernard Cornwell",
-      genres: ["adventure", "history"],
+      rating: 8.38,
     },
     {
       title: "Beside Still Waters",
       author: "Robert Sheckley",
-      genres: ["fiction", "mysticism"],
+      rating: 8.51,
     },
     {
-      title: "Redder Than Blood",
-      author: "Tanith Lee",
-      genres: ["horror", "mysticism", "adventure"],
+      title: "The Dream of a Ridiculous Man",
+      author: "Fyodor Dostoevsky",
+      rating: 7.75,
     },
+    { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+    { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
   ];
+  
+  const MIN_RATING = 8;
+  const AUTHOR = "Bernard Cornwell";
 
-  const allGenres = books.flatMap(book => book.genres);
-  const uniqueGenres = allGenres.filter((genre, idx, arr) => arr.indexOf(genre) === idx);
-console.log(allGenres);
-console.log(uniqueGenres);
+  
+  const topRatedBooks = books.filter(book => book.rating >= MIN_RATING) 
+  console.log(topRatedBooks);
+  const booksByAuthor = books.filter(book => book.author.includes(AUTHOR));
+  console.log(booksByAuthor);
