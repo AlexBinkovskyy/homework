@@ -1501,13 +1501,18 @@
 // console.log(getCommonElements([1, 2, 3], [10, 20, 30]));
 
 
-function changeEven(numbers, value) {
-   const pureEven = [...numbers]
-   pureEven.forEach((number, index) => {if (number % 2 === 0) {pureEven[index] += value}}) 
-   return pureEven
-  }
+// function changeEven(numbers, value) {
+//    const pureEven = [...numbers]
+//    pureEven.forEach((number, index) => {if (number % 2 === 0) {pureEven[index] += value}}) 
+//    return pureEven
+//   }
 
-  console.log(changeEven([1, 2, 3, 4, 5], 10));
-  console.log(changeEven([2, 8, 3, 7, 4, 6], 10));
-  console.log(changeEven([17, 24, 68, 31, 42], 100));
-  console.log(changeEven([44, 13, 81, 92, 36, 54], 100));
+//   console.log(changeEven([1, 2, 3, 4, 5], 10));
+//   console.log(changeEven([2, 8, 3, 7, 4, 6], 10));
+//   console.log(changeEven([17, 24, 68, 31, 42], 100));
+//   console.log(changeEven([44, 13, 81, 92, 36, 54], 100));
+
+// const planets = ["Earth", "Mars", "Venus", "Jupiter"];
+
+// const planetsLengths = planets.map(planet => planet.length);
+// console.log(planetsLengths);
