@@ -1445,11 +1445,17 @@
 //   console.log(getCommonElements([1, 2, 3], [10, 20, 30]));
   
 
+// const calculateTotalPrice = (quantity, pricePerItem) =>  quantity * pricePerItem;
+
+//   console.log(calculateTotalPrice(5, 100));
+//   console.log(calculateTotalPrice(8, 60));
+//   console.log(calculateTotalPrice(3, 400));
 
 
-const calculateTotalPrice = (quantity, pricePerItem) =>  quantity * pricePerItem;
-
+// const calculateTotalPrice = (quantity, pricePerItem) =>  quantity * pricePerItem;
   
-  console.log(calculateTotalPrice(5, 100));
-  console.log(calculateTotalPrice(8, 60));
-  console.log(calculateTotalPrice(3, 400));
+//   console.log(calculateTotalPrice(5, 100));
+//   console.log(calculateTotalPrice(8, 60));
+//   console.log(calculateTotalPrice(3, 400));
+
+
