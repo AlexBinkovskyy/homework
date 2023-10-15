@@ -1540,3 +1540,25 @@
   
 //   const titles = books.map(book => book.title);
 //   console.log(titles);
+
+// const books = [
+//     {
+//       title: "The Last Kingdom",
+//       author: "Bernard Cornwell",
+//       genres: ["adventure", "history"],
+//     },
+//     {
+//       title: "Beside Still Waters",
+//       author: "Robert Sheckley",
+//       genres: ["fiction"],
+//     },
+//     {
+//       title: "Redder Than Blood",
+//       author: "Tanith Lee",
+//       genres: ["horror", "mysticism"],
+//     },
+//   ];
+
+  
+//   const genres = books.flatMap(genre => genre.genres)
+//   console.log(genres);
