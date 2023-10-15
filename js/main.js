@@ -1430,3 +1430,18 @@
 //   console.log(filterArray([1, 2, 3, 4, 5], 5));
 //   console.log(filterArray([12, 24, 8, 41, 76], 38));
 //   console.log(filterArray([12, 24, 8, 41, 76], 20));
+
+function getCommonElements(firstArray, secondArray) {
+    const commonElements = [];
+    // Change code below this line
+  
+    for (let i = 0; i < firstArray.length; i += 1) {
+      if (secondArray.includes(firstArray[i])) {
+        commonElements.push(firstArray[i]);
+      }
+    }
+  
+    return commonElements;
+    // Change code above this line
+  }
+  
