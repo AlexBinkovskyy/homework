@@ -1792,8 +1792,10 @@ const usersList =
       age: 39
     }
   ];
-//   const getUsersWithEyeColor = (users, color) => users.filter(user => user.eyeColor === color)
-//   console.log(getUsersWithEyeColor(usersList, 'blue'));
-  
-const getUsersWithAge = (users, minAge, maxAge) => users.filter(user => (user.age > minAge && user.age < maxAge))
-console.log(getUsersWithAge(usersList, 20, 30));
+// const getUsersWithEyeColor = (users, color) => users.filter(user => user.eyeColor === color)
+// const getUsersWithAge = (users, minAge, maxAge) => users.filter(user => (user.age > minAge && user.age < maxAge))
+const getUsersWithFriend = (users, friendName) => users.filter(user => user.friends.some(fellow => fellow.includes(friendName)));
+
+// console.log(getUsersWithEyeColor(usersList, 'blue'));
+// console.log(getUsersWithAge(usersList, 20, 30));
+console.log(getUsersWithFriend(usersList, "Briana Decker"));
