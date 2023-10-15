@@ -1375,25 +1375,42 @@
 // console.log(students);
 // console.log(inDescendingScoreOrder);
 
-const pizzaPalace = {
-    pizzas: ["Ultracheese", "Smoked", "Four meats"],
-    order(pizzaName) {},
-  };
-  // Change code above this line
-  
-  // Callback for onSuccess
-  function makePizza(pizzaName) {
-    return `Your order is accepted. Cooking pizza ${pizzaName}.`;
-  }
-  
-  // Callback for onError
-  function onOrderError(error) {
-    return `Error! ${error}`;
-  }
-  
-  // Method calls with callbacks
-  console.log(pizzaPalace.order("Smoked", makePizza, onOrderError));
-  console.log(pizzaPalace.order("Four meats", makePizza, onOrderError));
-  console.log(pizzaPalace.order("Big Mike", makePizza, onOrderError));
-  console.log(pizzaPalace.order("Vienna", makePizza, onOrderError));
-  
+// const pizzaPalace = {
+//   pizzas: ["Ultracheese", "Smoked", "Four meats"],
+//   order(pizzaName, onSuccess, onError) {
+//     if(this.pizzas.includes(pizzaName)){
+//       return onSuccess(pizzaName)
+//     } else {
+//       return onError(`There is no pizza with a name ${pizzaName} in the assortment.`)
+//     }
+//   },
+// };
+
+// // Callback for onSuccess
+// function makePizza(pizzaName) {
+//   return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+// }
+
+// // Callback for onError
+// function onOrderError(error) {
+//   return `Error! ${error}`;
+// }
+
+// // Method calls with callbacks
+// console.log(pizzaPalace.order("Smoked", makePizza, onOrderError));
+// console.log(pizzaPalace.order("Four meats", makePizza, onOrderError));
+// console.log(pizzaPalace.order("Big Mike", makePizza, onOrderError));
+// console.log(pizzaPalace.order("Vienna", makePizza, onOrderError));
+
+// function calculateTotalPrice(orderedItems) {
+//   let totalPrice = 0;
+
+//   orderedItems.forEach((item) => {
+//     totalPrice += item;
+//   });
+//   return totalPrice;
+// }
+
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+// console.log(calculateTotalPrice([164, 48, 291]));
+// console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
