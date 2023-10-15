@@ -1655,3 +1655,37 @@
 // console.log(evenNumbers);
 // console.log(oddNumbers);
 
+// const students = [
+//   { name: "Mango", courses: ["mathematics", "physics"] },
+//   { name: "Poly", courses: ["science", "mathematics"] },
+//   { name: "Kiwi", courses: ["physics", "biology"] },
+// ];
+
+// const allCourses = (students.flatMap(student => student.courses)).filter((course, index, array) => array.indexOf(course) === index);
+// // ["mathematics", "physics", "science", "mathematics", "physics", "biology"];
+// console.log(allCourses);
+
+
+
+const books = [
+    {
+      title: "The Last Kingdom",
+      author: "Bernard Cornwell",
+      genres: ["adventure", "history"],
+    },
+    {
+      title: "Beside Still Waters",
+      author: "Robert Sheckley",
+      genres: ["fiction", "mysticism"],
+    },
+    {
+      title: "Redder Than Blood",
+      author: "Tanith Lee",
+      genres: ["horror", "mysticism", "adventure"],
+    },
+  ];
+
+  const allGenres = books.flatMap(book => book.genres);
+  const uniqueGenres = allGenres.filter((genre, idx, arr) => arr.indexOf(genre) === idx);
+console.log(allGenres);
+console.log(uniqueGenres);
