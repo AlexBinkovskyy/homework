@@ -1841,9 +1841,9 @@ const usersList =
 // console.log(bookWithTitle);
 // console.log(bookByAuthor);
 
-const firstArray = [26, 94, 36, 18];
-const secondArray = [17, 61, 23];
-const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
 
 
 // const eachElementInFirstIsEven = firstArray.every(num => (num % 2 ===0));
@@ -1859,4 +1859,17 @@ const thirdArray = [17, 26, 94, 61, 36, 23, 18];
 // const anyElementInSecondIsOdd = secondArray.some(num => (num % 2 !==0));
 // const anyElementInThirdIsEven = thirdArray.some(num => (num % 2 ===0));
 // const anyElementInThirdIsOdd = thirdArray.some(num => (num % 2 !==0));
+
+// const players = {
+//   mango: 1270,
+//   poly: 468,
+//   ajax: 710,
+//   kiwi: 244
+// };
+// const playtimes = Object.values(players); // [1270, 468, 710, 244]
+// const totalPlayTime = playtimes.reduce((prValue, time) => prValue + time);
+// const averagePlayTime = totalPlayTime / playtimes.length;
+// console.log(totalPlayTime);
+// console.log(averagePlayTime);
+
 
