@@ -1500,10 +1500,9 @@
 // console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
 // console.log(getCommonElements([1, 2, 3], [10, 20, 30]));
 
-
 // function changeEven(numbers, value) {
 //    const pureEven = [...numbers]
-//    pureEven.forEach((number, index) => {if (number % 2 === 0) {pureEven[index] += value}}) 
+//    pureEven.forEach((number, index) => {if (number % 2 === 0) {pureEven[index] += value}})
 //    return pureEven
 //   }
 
@@ -1537,7 +1536,6 @@
 //     { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
 //   ];
 
-  
 //   const titles = books.map(book => book.title);
 //   console.log(titles);
 
@@ -1559,7 +1557,6 @@
 //     },
 //   ];
 
-  
 //   const genres = books.flatMap(genre => genre.genres)
 //   console.log(genres);
 
@@ -1648,7 +1645,6 @@
 //   const getUserEmails = users => users.map(emails => emails.email)
 //   console.log(getUserEmails(usersList));
 
-
 // const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
 // const evenNumbers = numbers.filter(number => number % 2 === 0);
 // const oddNumbers = numbers.filter(number => number % 2 !== 0);
@@ -1664,7 +1660,6 @@
 // const allCourses = (students.flatMap(student => student.courses)).filter((course, index, array) => array.indexOf(course) === index);
 // // ["mathematics", "physics", "science", "mathematics", "physics", "biology"];
 // console.log(allCourses);
-
 
 // const books = [
 //     {
@@ -1689,7 +1684,6 @@
 // console.log(allGenres);
 // console.log(uniqueGenres);
 
-
 // const books = [
 //     {
 //       title: "The Last Kingdom",
@@ -1709,89 +1703,87 @@
 //     { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
 //     { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
 //   ];
-  
+
 //   const MIN_RATING = 8;
 //   const AUTHOR = "Bernard Cornwell";
 
-  
-//   const topRatedBooks = books.filter(book => book.rating >= MIN_RATING) 
+//   const topRatedBooks = books.filter(book => book.rating >= MIN_RATING)
 //   console.log(topRatedBooks);
 //   const booksByAuthor = books.filter(book => book.author.includes(AUTHOR));
 //   console.log(booksByAuthor);
 
-const usersList =
-[
-    {
-      name: "Moore Hensley",
-      email: "moorehensley@indexia.com",
-      eyeColor: "blue",
-      friends: ["Sharron Pace"],
-      isActive: false,
-      balance: 2811,
-      gender: "male",
-      age: 37
-    },
-    {
-      name: "Sharlene Bush",
-      email: "sharlenebush@tubesys.com",
-      eyeColor: "blue",
-      friends: ["Briana Decker", "Sharron Pace"],
-      isActive: true,
-      balance: 3821,
-      gender: "female",
-      age: 34
-    },
-    {
-      name: "Ross Vazquez",
-      email: "rossvazquez@xinware.com",
-      eyeColor: "green",
-      friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
-      isActive: false,
-      balance: 3793,
-      gender: "male",
-      age: 24
-    },
-    {
-      name: "Elma Head",
-      email: "elmahead@omatom.com",
-      eyeColor: "green",
-      friends: ["Goldie Gentry", "Aisha Tran"],
-      isActive: true,
-      balance: 2278,
-      gender: "female",
-      age: 21
-    },
-    {
-      name: "Carey Barr",
-      email: "careybarr@nurali.com",
-      eyeColor: "blue",
-      friends: ["Jordan Sampson", "Eddie Strong"],
-      isActive: true,
-      balance: 3951,
-      gender: "male",
-      age: 27
-    },
-    {
-      name: "Blackburn Dotson",
-      email: "blackburndotson@furnigeer.com",
-      eyeColor: "brown",
-      friends: ["Jacklyn Lucas", "Linda Chapman"],
-      isActive: false,
-      balance: 1498,
-      gender: "male",
-      age: 38
-    },
-    {
-      name: "Sheree Anthony",
-      email: "shereeanthony@kog.com",
-      eyeColor: "brown",
-      friends: ["Goldie Gentry", "Briana Decker"],
-      isActive: true,
-      balance: 2764,
-      gender: "female",
-      age: 39
-    }
-  ];
+const usersList = [
+  {
+    name: "Moore Hensley",
+    email: "moorehensley@indexia.com",
+    eyeColor: "blue",
+    friends: ["Sharron Pace"],
+    isActive: false,
+    balance: 2811,
+    gender: "male",
+    age: 37,
+  },
+  {
+    name: "Sharlene Bush",
+    email: "sharlenebush@tubesys.com",
+    eyeColor: "blue",
+    friends: ["Briana Decker", "Sharron Pace"],
+    isActive: true,
+    balance: 3821,
+    gender: "female",
+    age: 34,
+  },
+  {
+    name: "Ross Vazquez",
+    email: "rossvazquez@xinware.com",
+    eyeColor: "green",
+    friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+    isActive: false,
+    balance: 3793,
+    gender: "male",
+    age: 24,
+  },
+  {
+    name: "Elma Head",
+    email: "elmahead@omatom.com",
+    eyeColor: "green",
+    friends: ["Goldie Gentry", "Aisha Tran"],
+    isActive: true,
+    balance: 2278,
+    gender: "female",
+    age: 21,
+  },
+  {
+    name: "Carey Barr",
+    email: "careybarr@nurali.com",
+    eyeColor: "blue",
+    friends: ["Jordan Sampson", "Eddie Strong"],
+    isActive: true,
+    balance: 3951,
+    gender: "male",
+    age: 27,
+  },
+  {
+    name: "Blackburn Dotson",
+    email: "blackburndotson@furnigeer.com",
+    eyeColor: "brown",
+    friends: ["Jacklyn Lucas", "Linda Chapman"],
+    isActive: false,
+    balance: 1498,
+    gender: "male",
+    age: 38,
+  },
+  {
+    name: "Sheree Anthony",
+    email: "shereeanthony@kog.com",
+    eyeColor: "brown",
+    friends: ["Goldie Gentry", "Briana Decker"],
+    isActive: true,
+    balance: 2764,
+    gender: "female",
+    age: 39,
+  },
+];
 // const getUsersWithEyeColor = (users, color) => users.filter(user => user.eyeColor === color)
 // const getUsersWithAge = (users, minAge, maxAge) => users.filter(user => (user.age > minAge && user.age < maxAge))
 // const getUsersWithFriend = (users, friendName) => users.filter(user => user.friends.filter(fellow => fellow.includes(friendName)));
@@ -1805,8 +1797,7 @@ const usersList =
 // const getTotalFriendCount = users => users.reduce((count, user) => {return user.friends.length + count}, 0)
 // const sortByAscendingBalance = users => users.sort((a, b) => a.balance - b.balance)
 // const sortByDescendingFriendCount = users => [...users].sort((a, b) => b.friends.length - a.friends.length)
-const sortByName = users => [...users].sort((a, b) => a.name.localeCompare(b.name))
-
+// const sortByName = users => [...users].sort((a, b) => a.name.localeCompare(b.name))
 
 // console.log(getUsersWithEyeColor(usersList, 'blue'));
 // console.log(getUsersWithAge(usersList, 20, 30));
@@ -1820,8 +1811,7 @@ const sortByName = users => [...users].sort((a, b) => a.name.localeCompare(b.nam
 // console.log(getTotalFriendCount(usersList));
 // console.log(sortByAscendingBalance(usersList));
 // console.log(sortByDescendingFriendCount(usersList));
-console.log(sortByName(usersList));
-
+// console.log(sortByName(usersList));
 
 // const books = [
 //   {
@@ -1844,7 +1834,6 @@ console.log(sortByName(usersList));
 // const BOOK_TITLE = 'The Dream of a Ridiculous Man';
 // const AUTHOR = 'Robert Sheckley';
 
-
 // const bookWithTitle = books.find(book => book.title === BOOK_TITLE);
 // const bookByAuthor = books.find(book => book.author === AUTHOR);
 
@@ -1854,7 +1843,6 @@ console.log(sortByName(usersList));
 // const firstArray = [26, 94, 36, 18];
 // const secondArray = [17, 61, 23];
 // const thirdArray = [17, 26, 94, 61, 36, 23, 18];
-
 
 // const eachElementInFirstIsEven = firstArray.every(num => (num % 2 ===0));
 // const eachElementInFirstIsOdd = firstArray.every(num => (num % 2 !==0));
@@ -1882,7 +1870,6 @@ console.log(sortByName(usersList));
 // console.log(totalPlayTime);
 // console.log(averagePlayTime);
 
-
 // const players = [
 //   { name: "Mango", playtime: 1270, gamesPlayed: 4 },
 //   { name: "Poly", playtime: 469, gamesPlayed: 2 },
@@ -1891,7 +1878,6 @@ console.log(sortByName(usersList));
 // ];
 // const totalAveragePlaytimePerGame = players.reduce((total, player) => {return total = total + (player.playtime / player.gamesPlayed)}, 0)
 // console.log(totalAveragePlaytimePerGame);
-
 
 // const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
 // const authors = [
@@ -1951,3 +1937,34 @@ console.log(sortByName(usersList));
 // console.log(sortedByAscendingRating);
 // console.log(sortedByDescentingRating);
 
+const books = [
+  {
+    title: "The Last Kingdom",
+    author: "Bernard Cornwell",
+    rating: 8.38,
+  },
+  {
+    title: "Beside Still Waters",
+    author: "Robert Sheckley",
+    rating: 8.51,
+  },
+  {
+    title: "The Dream of a Ridiculous Man",
+    author: "Fyodor Dostoevsky",
+    rating: 7.75,
+  },
+  { title: "Redder Than Blood",
+    author: "Tanith Lee",
+    rating: 7.94 },
+  {
+    title: "The Dreams in the Witch House",
+    author: "Howard Lovecraft",
+    rating: 8.67,
+  },
+];
+const MIN_BOOK_RATING = 8;
+
+
+const names = [...books].filter(book => book.rating > MIN_BOOK_RATING).map(book => book.author).sort((a, b) => a.localeCompare(b))
+
+console.log(names);
