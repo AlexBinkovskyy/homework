@@ -1802,6 +1802,7 @@ const usersList =
 // const isEveryUserActive = (users) => users.every(user => user.isActive === true)
 // const isAnyUserActive = users => users.some(user => user.isActive === true)
 // const calculateTotalBalance = users => users.reduce((total, user) => {return user.balance + total}, 0)
+// const getTotalFriendCount = users => users.reduce((count, user) => {return user.friends.length + count}, 0)
 
 
 // console.log(getUsersWithEyeColor(usersList, 'blue'));
@@ -1813,7 +1814,7 @@ const usersList =
 // console.log(getUserWithEmail(usersList, "shereeanthony@kog.com"));
 // console.log(isEveryUserActive(usersList));
 // console.log(calculateTotalBalance(usersList));
-
+// console.log(getTotalFriendCount(usersList));
 
 // const books = [
 //   {
