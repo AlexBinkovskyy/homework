@@ -1803,7 +1803,7 @@ const usersList =
 // const isAnyUserActive = users => users.some(user => user.isActive === true)
 // const calculateTotalBalance = users => users.reduce((total, user) => {return user.balance + total}, 0)
 // const getTotalFriendCount = users => users.reduce((count, user) => {return user.friends.length + count}, 0)
-
+const sortByAscendingBalance = users => users.sort((a, b) => a.balance - b.balance)
 
 // console.log(getUsersWithEyeColor(usersList, 'blue'));
 // console.log(getUsersWithAge(usersList, 20, 30));
@@ -1815,6 +1815,8 @@ const usersList =
 // console.log(isEveryUserActive(usersList));
 // console.log(calculateTotalBalance(usersList));
 // console.log(getTotalFriendCount(usersList));
+console.log(sortByAscendingBalance(usersList));
+
 
 // const books = [
 //   {
