@@ -1801,6 +1801,7 @@ const usersList =
 // const getUserWithEmail = (users, email) => users.find(user => user.email.includes(email))
 // const isEveryUserActive = (users) => users.every(user => user.isActive === true)
 // const isAnyUserActive = users => users.some(user => user.isActive === true)
+// const calculateTotalBalance = users => users.reduce((total, user) => {return user.balance + total}, 0)
 
 
 // console.log(getUsersWithEyeColor(usersList, 'blue'));
@@ -1811,6 +1812,7 @@ const usersList =
 // console.log(getInactiveUsers(usersList));
 // console.log(getUserWithEmail(usersList, "shereeanthony@kog.com"));
 // console.log(isEveryUserActive(usersList));
+// console.log(calculateTotalBalance(usersList));
 
 
 // const books = [
@@ -1873,17 +1875,13 @@ const usersList =
 // console.log(averagePlayTime);
 
 
-const players = [
-  { name: "Mango", playtime: 1270, gamesPlayed: 4 },
-  { name: "Poly", playtime: 469, gamesPlayed: 2 },
-  { name: "Ajax", playtime: 690, gamesPlayed: 3 },
-  { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
-];
+// const players = [
+//   { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+//   { name: "Poly", playtime: 469, gamesPlayed: 2 },
+//   { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+//   { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+// ];
+// const totalAveragePlaytimePerGame = players.reduce((total, player) => {return total = total + (player.playtime / player.gamesPlayed)}, 0)
+// console.log(totalAveragePlaytimePerGame);
 
 
-const totalAveragePlaytimePerGame = players.reduce((total, player) => {return total = total + (player.playtime / player.gamesPlayed)}, 0)
-console.log(totalAveragePlaytimePerGame);
-317.5
-234,5
-230
-241
