@@ -1898,10 +1898,20 @@ const usersList =
 // console.log(ascendingReleaseDates);
 // console.log(alphabeticalAuthors);
 
-const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const ascendingReleaseDates = [...releaseDates].sort((a, b) => a - b);
+// const descendingReleaseDates = [...releaseDates].sort((a, b) => b - a);
+// console.log(ascendingReleaseDates);
+// console.log(descendingReleaseDates);
 
-const ascendingReleaseDates = [...releaseDates].sort((a, b) => a - b);
-const descendingReleaseDates = [...releaseDates].sort((a, b) => b - a);
-
-console.log(ascendingReleaseDates);
-console.log(descendingReleaseDates);
+// const authors = [
+//   "Tanith Lee",
+//   "Bernard Cornwell",
+//   "Robert Sheckley",
+//   "Fyodor Dostoevsky",
+//   "Howard Lovecraft",
+// ];
+// const authorsInAlphabetOrder = [...authors].sort();
+// const authorsInReversedOrder = [...authors].sort((a, b) => b.localeCompare(a));
+// console.log(authorsInAlphabetOrder);
+// console.log(authorsInReversedOrder);
