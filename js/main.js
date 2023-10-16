@@ -1798,7 +1798,10 @@ const usersList = [
 // const sortByAscendingBalance = users => users.sort((a, b) => a.balance - b.balance)
 // const sortByDescendingFriendCount = users => [...users].sort((a, b) => b.friends.length - a.friends.length)
 // const sortByName = users => [...users].sort((a, b) => a.name.localeCompare(b.name))
-const getNamesSortedByFriendCount = users => [...users].sort((a, b) => a.friends.length - b.friends.length).map(user => user.name)
+// const getNamesSortedByFriendCount = users => [...users].sort((a, b) => a.friends.length - b.friends.length).map(user => user.name)
+const getSortedFriends = users => [...users].flatMap(friend => friend.friends)
+.filter((friend, index, array) => array.indexOf(friend) === index)
+.sort((a, b) => a.localeCompare(b))
 
 
 // console.log(getUsersWithEyeColor(usersList, 'blue'));
@@ -1814,7 +1817,8 @@ const getNamesSortedByFriendCount = users => [...users].sort((a, b) => a.friends
 // console.log(sortByAscendingBalance(usersList));
 // console.log(sortByDescendingFriendCount(usersList));
 // console.log(sortByName(usersList));
-console.log(getNamesSortedByFriendCount(usersList));
+// console.log(getNamesSortedByFriendCount(usersList));
+console.log(getSortedFriends(usersList));
 
 
 // const books = [
