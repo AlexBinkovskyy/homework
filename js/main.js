@@ -1802,7 +1802,6 @@
 // const getSortedFriends = users => [...users].flatMap(friend => friend.friends).filter((friend, index, array) => array.indexOf(friend) === index).sort((a, b) => a.localeCompare(b))
 // const getTotalBalanceByGender = (users, gender) => [...users].filter(user => user.gender === gender).reduce((totall, user) => {return user.balance + totall}, 0)
 
-
 // console.log(getUsersWithEyeColor(usersList, 'blue'));
 // console.log(getUsersWithAge(usersList, 20, 30));
 // console.log(getUsersWithFriend(usersList, "Briana Decker"));
@@ -1819,7 +1818,6 @@
 // console.log(getNamesSortedByFriendCount(usersList));
 // console.log(getSortedFriends(usersList));
 // console.log(getTotalBalanceByGender(usersList, 'female'));
-
 
 // const books = [
 //   {
@@ -1973,3 +1971,102 @@
 // const MIN_BOOK_RATING = 8;
 // const names = [...books].filter(book => book.rating > MIN_BOOK_RATING).map(book => book.author).sort((a, b) => a.localeCompare(b))
 // console.log(names);
+// 
+// class User {
+  // constructor({ userName, userEmail, userAddress }) {
+    // this.userName = userName;
+    // this.userEmail = userEmail;
+    // this.userAddress = userAddress;
+  // }
+  // getUserEmail = () => this.userEmail;
+  // changeUserEmail = (newEmail) => this.userEmail = newEmail;
+// }
+// 
+// const mango = new User({
+  // userName: "Mango",
+  // userEmail: "mango@mango.net",
+  // userAddress: "Lviv",
+// });
+// console.log(mango);
+// const newEmail = 'fuck@pusy.com'
+// mango.changeUserEmail(newEmail)
+// console.log(mango);
+
+// class User {
+  // static #takenEmails = [];
+// 
+  // static isEmailTaken(email) {
+    // return User.#takenEmails.includes(email);
+  // }
+// 
+  // #email;
+// 
+  // constructor({ email }) {
+    // this.#email = email;
+    // User.#takenEmails.push(email);
+  // }
+  // get email()  {return this.#email};
+// }
+// 
+// const mango = new User({ email: "mango@mail.com" });
+// 
+// console.log(User.isEmailTaken("poly@mail.com"));
+// console.log(mango.email);
+
+// const customer = {
+//   username: "Mango",
+//   balance: 24000,
+//   discount: 0.1,
+//   orders: ["Burger", "Pizza", "Salad"],
+//   // Change code below this line
+//   getBalance() {
+//     return this.balance;
+//   },
+//   getDiscount() {
+//     return this.discount;
+//   },
+//   setDiscount(value) {
+//     this.discount = value;
+//   },
+//   getOrders() {
+//     return this.orders;
+//   },
+//   addOrder(cost, order) {
+//     this.balance -= cost - cost * this.discount;
+//     this.orders.push(order);
+//   },
+//   // Change code above this line
+// };
+
+// customer.setDiscount(0.15);
+// console.log(customer.getDiscount()); // 0.15
+// customer.addOrder(5000, "Steak");
+// console.log(customer.getBalance()); // 19750
+// console.log(customer.getOrders()); // ["Burger", "Pizza", "Salad", "Steak"]
+
+
+// const historyService = {
+//   orders: [
+//     { email: "jacob@hotmail.com", dish: "Burrito" },
+//     { email: "solomon@topmail.net", dish: "Burger" },
+//     { email: "artemis@coldmail.net", dish: "Pizza" },
+//     { email: "solomon@topmail.net", dish: "Apple pie" },
+//     { email: "jacob@hotmail.com", dish: "Taco" },
+//   ],
+//   // Change code below this line
+//   getOrdersLog() {
+//     return this.orders
+//       .map(order => `email: ${order.email} dish: ${order.dish}`)
+//       .join(" - ");
+//   },
+//   getEmails() {
+//     const emails = this.orders.map(order => order.email);
+//     const uniqueEmails = new Set(emails);
+//     return [...uniqueEmails];
+//   },
+//   getOrdersByEmail(email) {
+//     return this.orders.filter(order => order.email === email);
+//   },
+//   // Change code above this line
+// };
+
