@@ -1971,21 +1971,21 @@
 // const MIN_BOOK_RATING = 8;
 // const names = [...books].filter(book => book.rating > MIN_BOOK_RATING).map(book => book.author).sort((a, b) => a.localeCompare(b))
 // console.log(names);
-// 
+//
 // class User {
-  // constructor({ userName, userEmail, userAddress }) {
-    // this.userName = userName;
-    // this.userEmail = userEmail;
-    // this.userAddress = userAddress;
-  // }
-  // getUserEmail = () => this.userEmail;
-  // changeUserEmail = (newEmail) => this.userEmail = newEmail;
+// constructor({ userName, userEmail, userAddress }) {
+// this.userName = userName;
+// this.userEmail = userEmail;
+// this.userAddress = userAddress;
 // }
-// 
+// getUserEmail = () => this.userEmail;
+// changeUserEmail = (newEmail) => this.userEmail = newEmail;
+// }
+//
 // const mango = new User({
-  // userName: "Mango",
-  // userEmail: "mango@mango.net",
-  // userAddress: "Lviv",
+// userName: "Mango",
+// userEmail: "mango@mango.net",
+// userAddress: "Lviv",
 // });
 // console.log(mango);
 // const newEmail = 'fuck@pusy.com'
@@ -1993,23 +1993,23 @@
 // console.log(mango);
 
 // class User {
-  // static #takenEmails = [];
-// 
-  // static isEmailTaken(email) {
-    // return User.#takenEmails.includes(email);
-  // }
-// 
-  // #email;
-// 
-  // constructor({ email }) {
-    // this.#email = email;
-    // User.#takenEmails.push(email);
-  // }
-  // get email()  {return this.#email};
+// static #takenEmails = [];
+//
+// static isEmailTaken(email) {
+// return User.#takenEmails.includes(email);
 // }
-// 
+//
+// #email;
+//
+// constructor({ email }) {
+// this.#email = email;
+// User.#takenEmails.push(email);
+// }
+// get email()  {return this.#email};
+// }
+//
 // const mango = new User({ email: "mango@mail.com" });
-// 
+//
 // console.log(User.isEmailTaken("poly@mail.com"));
 // console.log(mango.email);
 
@@ -2044,7 +2044,6 @@
 // console.log(customer.getBalance()); // 19750
 // console.log(customer.getOrders()); // ["Burger", "Pizza", "Salad", "Steak"]
 
-
 // const historyService = {
 //   orders: [
 //     { email: "jacob@hotmail.com", dish: "Burrito" },
@@ -2069,4 +2068,31 @@
 //   },
 //   // Change code above this line
 // };
+
+// class Storage {
+//   constructor(items) {
+//     this.items = items;
+//   }
+
+//   getItems() {
+//     return this.items;
+//   }
+//   addItem(newItem) {
+//     this.items.push(newItem);
+//   }
+//   removeItem(itemToRemove) {
+//      this.items = this.items.filter(item => item !== itemToRemove)
+//     // const index = this.items.indexOf(itemToRemove);
+//     // if (index !== -1) {this.items.splice(index, 1)}
+//   }
+// }
+
+// const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+// storage.addItem("Droid");
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+// storage.removeItem("Prolonger");
+// console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+
 
