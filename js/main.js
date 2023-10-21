@@ -2095,7 +2095,6 @@
 // storage.removeItem("Prolonger");
 // console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
 
-
 // class StringBuilder {
 //   constructor (initialValue) {
 //     this.value = initialValue;
@@ -2115,3 +2114,288 @@
 // console.log(builder.getValue()); // "^.^"
 // builder.padBoth("=");
 // console.log(builder.getValue()); // "=^.^="
+
+// class User {
+//     constructor(email) {
+//       this.email = email;
+//     }
+
+//     get email() {
+//       return this.email;
+//     }
+
+//     set email(newEmail) {
+//       this.email = newEmail;
+//     }
+//   }
+//   // Change code below this line
+
+//   class Admin extends User {
+
+//     static AccessLevel = {
+//         BASIC: "basic",
+//         SUPERUSER: "superuser"}
+
+//   }
+//   console.log(Admin.AccessLevel.BASIC);
+
+// class User {
+//     email;
+
+//     constructor(email) {
+//       this.email = email;
+//     }
+
+//     get email() {
+//       return this.email;
+//     }
+
+//     set email(newEmail) {
+//       this.email = newEmail;
+//     }
+//   }
+
+//   class Admin extends User {
+//     // Change code below this line
+//     constructor({email, accessLevel}) {
+//         super(email);
+//         this.accessLevel = accessLevel;
+//     }
+
+//     static AccessLevel = {
+//       BASIC: "basic",
+//       SUPERUSER: "superuser",
+//     };
+
+//     // Change code above this line
+//   }
+
+//   const mango = new Admin({
+//     email: "mango@mail.com",
+//     accessLevel: Admin.AccessLevel.SUPERUSER,
+//   });
+
+//   console.log(mango.email);
+//   console.log(mango.email); // "mango@mail.com"
+//   console.log(mango.accessLevel); // "superuser"
+
+// class User {
+//     email;
+
+//     constructor(email) {
+//       this.email = email;
+//     }
+
+//     get email() {
+//       return this.email;
+//     }
+
+//     set email(newEmail) {
+//       this.email = newEmail;
+//     }
+//   }
+
+//   class Admin extends User {
+//     // Change code below this line
+
+//     blacklistedEmails = [];
+
+//     blacklist(email) {
+//         this.blacklistedEmails.push(email)
+//     }
+
+//     isBlacklisted(email) {
+//         return this.blacklistedEmails.includes(email);
+//     }
+
+//     static AccessLevel = {
+//       BASIC: "basic",
+//       SUPERUSER: "superuser",
+//     };
+
+//     constructor({ email, accessLevel }) {
+//       super(email);
+//       this.accessLevel = accessLevel;
+//     }
+
+//     // Change code above this line
+//   }
+
+//   const mango = new Admin({
+//     email: "mango@mail.com",
+//     accessLevel: Admin.AccessLevel.SUPERUSER,
+//   });
+
+//   console.log(mango.email); // "mango@mail.com"
+//   console.log(mango.accessLevel); // "superuser"
+
+//   mango.blacklist("poly@mail.com");
+//   console.log(mango.blacklistedEmails); // ["poly@mail.com"]
+//   console.log(mango.isBlacklisted("mango@mail.com")); // false
+//   console.log(mango.isBlacklisted("poly@mail.com")); // true
+
+// let a = 'fuck';
+// let b = 'kfuck';
+// a = a.split('')
+// b = b.split('')
+// let c = b[0] === a[a.length - 1]
+// console.log(c);
+
+// // Дана некоторая строка. Найдите позицию третьего нуля в строке.
+// let a = 'fuck0dsaf0adsf0asdfdfsg0dfsg0';
+// a = a.split('')
+// let position;
+// let count = 0;
+// for (let i = 0; i < a.length; i ++) {
+// if (a[i] === '0') {
+//    position = i;
+//       count += 1;
+//       if (count === 3)
+//       break;
+//   };
+// }
+// console.log(position);
+
+// // Даны числа, разделенные запятыми: '12,34,56' Найдите сумму этих чисел.
+// let a = '12,34,56'
+// let b = 0;
+// // a = a.split(',').map((value) => {b += Number(value); return b;})
+// // b = (a.split(',')).reduce((prValue, number) => {return prValue += Number(number)},0)
+// console.log(b);
+
+// // Дана дата в следующем формате: '2025-12-31' Преобразуйте эту дату в следующий объект: {	year: '2025',	month: '12', day: '31',}
+// let a = '2025-12-31'
+// a = a.split('-')
+// console.log(a);
+// const b = {}
+// function foo(year, month, day) {
+//     b.year = year;
+//     b.month = month;
+//     b.day = day;
+// }
+// foo(a[0], a[1], a[2]);
+// console.log(b);
+
+// // Дана некоторая строка с буквами и цифрами. Получите позицию первой цифры в этой строке.
+// let a = "fuckdsafadsfasdfdfsgd3fsg";
+// let b = a.split("");
+// let index;
+// for (let i = 0; i < b.length; i++) {
+//   if (!isNaN(b[i])) {
+//     console.log(index = Number(b.indexOf(b[i])));
+//     break;
+//   } else if (isNaN(b[i]) && i === b.length-1) {
+//     console.log('Чисел не знайдено');
+//   }
+// }
+
+// // Дан объект с ключами и значениями. Запишите в первый массив ключи объекта, а во второй - значения.
+// const obj = {
+//   name: 'Alice',
+//   age: 25,
+//   isFuck: true,
+// }
+// a = Object.keys(obj)
+// b = Object.values(obj)
+// console.log(a, b);
+
+// // Дано число. Выведите в консоль количество четных цифр в этом числе.
+// const a = 459843186446;
+// const b = a.toString().split('').reduce((prValue, elem) => {
+//   if (Number(elem) % 2 === 0) {return prValue + 1}
+//   return prValue;
+//  }, 0)
+//  console.log(b);
+
+// // Дана некоторая строка:'abcde'Переведите в верхний регистр все нечетные буквы этой строки. В нашем случае должно получится следующее:'AbCdE'
+// let a = 'abcde'
+// for (i=0; i<a.length; i++) {
+//   if(i % 2 ===0 ) {
+//    a = a.replace(a[i], a[i].toUpperCase())
+//     console.log(a[i]);
+//   }
+// }
+// console.log(a);
+
+// // Дана некоторая строка со словами: 'aaa bbb ccc' Сделайте заглавным первый символ каждого слова в этой строке.
+// // В нашем случае должно получится следующее: 'Aaa Bbb Ccc'
+// let a = 'aaa bbb ccc';
+// a = a.split(' ').map(word => {const firstLetter = word.charAt(0).toUpperCase(); const restWord = word.slice(1); return firstLetter + restWord})
+// console.log(a);
+
+// // Дана некоторая строка, например, вот такая: '023m0df0dfg0' Получите массив позиций всех нулей в этой в строке.
+// const a = '023m0df0dfg0';
+// b = a.split('').filter(zero => Number(zero) === 0)
+// console.log(b);
+
+// // Дана некоторая строка:'abcdefg'  Удалите из этой строки каждый третий символ. В нашем случае должно получится следующее: 'abdeg'
+// a = "abcdefg";
+// b = a.split("");
+// for (let i = 2; i < b.length; i+=2) {
+//     b.splice(i, 1)
+// }
+// a = b.join('')
+// console.log(a);
+
+// // Дан некоторый массив, например, вот такой: [1, 2, 3, 4, 5, 6] Поделите сумму элементов, стоящих на четных позициях, на сумму элементов, стоящих на нечетных позициях.
+// a = [1, 2, 3, 4, 5, 6];
+// even = a.filter(pos => pos %2 ===0).reduce((total, item) => total + item, 0)
+// odd = a.filter(pos => pos%2 !==0).reduce((total, item) => total + item, 0)
+// total = (even / odd).toFixed(2);
+// console.log(even);
+// console.log(odd);
+// console.log(total);
+
+// // Дана некоторая строка с буквами и цифрами. Получите массив позиций всех цифр из этой строки.
+// const a = "023m0df0dfg0";
+// b = a.split("");
+// numbers = []
+// for (i = 0; i < b.length; i++) {
+
+//   if (!isNaN(Number(b[i]))) {
+//     numbers.push(i+1)
+//   }
+// }
+// console.log(numbers);
+
+// // Дан массив с некоторыми числами, например, вот такой: [123, 456, 789] Напишите код, который перевернет числа в этом массиве по следующему принципу: [321, 654, 987]
+// a = [123, 456, 789]
+// a = a.map(num => {return parseInt(num.toString().split('').reverse().join(''))});
+// console.log(a);
+
+// Дана некоторая строка с числом: '1234567' Отделите тройки цифр пробелами, начиная с конца числа. В нашем случае должно получится следующее: '1 234 567'
+
+// a = "1234567654564654654654897987";
+// b = a.split("");
+// for (let i = b.length; i > 0; i -= 2) {
+//   b.splice(i, 0, " ");
+//   i--;
+// }
+// b = b.join(" ");
+// console.log(a);
+// console.log(b);
+
+// // Дана некоторая строка: 'AbCdE' Смените регистр букв этой строки на противоположный. В нашем случае должно получится следующее: 'aBcDe'
+// a = 'AbCdE'
+// b = a.split('')
+// b = b.map(letter => {return letter === letter.toUpperCase() ? letter = letter.toLowerCase() : letter.toUpperCase()}).join('')
+// console.log(b);
+
+// Дан некоторый массив с числами, например, вот такой: [1, 2, 3, 4, 5, 6] Слейте пары элементов вместе: [12, 34, 56]
+
+// a = [1, 2, 3, 4, 5, 6, 7];
+// for (i = 0; i < a.length; i++) {
+//   a[i] = a[i].toString();
+// }
+// for (i = 0; i < a.length; i++) {
+//   if (i < a.length - 1) {
+//     a[i] = a[i] + a[i + 1];
+//     a.splice(i + 1, 1);
+//   }
+// }
+// console.log(a);
+
+// Дана некоторая строка со словами: 'aaa bbb ccc eee fff' Сделайте заглавным первый символ каждого второго слова в этой строке.
+// В нашем случае должно получится следующее: 'aaa Bbb ccc Eee fff'
+
+a = 'aaa bbb ccc eee fff';
