@@ -2381,21 +2381,57 @@
 // b = b.map(letter => {return letter === letter.toUpperCase() ? letter = letter.toLowerCase() : letter.toUpperCase()}).join('')
 // console.log(b);
 
-// Дан некоторый массив с числами, например, вот такой: [1, 2, 3, 4, 5, 6] Слейте пары элементов вместе: [12, 34, 56]
-
-// a = [1, 2, 3, 4, 5, 6, 7];
+// // Дан некоторый массив с числами, например, вот такой: [1, 2, 3, 4, 5, 6] Слейте пары элементов вместе: [12, 34, 56]
+// a = [1, 2, 3, 4, 5, 6, 789, 3];
 // for (i = 0; i < a.length; i++) {
 //   a[i] = a[i].toString();
 // }
 // for (i = 0; i < a.length; i++) {
 //   if (i < a.length - 1) {
-//     a[i] = a[i] + a[i + 1];
+//     a[i] = parseInt(a[i] + a[i + 1]);
 //     a.splice(i + 1, 1);
-//   }
+//   } a[a.length-1] = parseInt(a[a.length-1])
 // }
 // console.log(a);
 
-// Дана некоторая строка со словами: 'aaa bbb ccc eee fff' Сделайте заглавным первый символ каждого второго слова в этой строке.
-// В нашем случае должно получится следующее: 'aaa Bbb ccc Eee fff'
+// // Дана некоторая строка со словами: 'aaa bbb ccc eee fff' Сделайте заглавным первый символ каждого второго слова в этой строке.
+// // В нашем случае должно получится следующее: 'aaa Bbb ccc Eee fff'
+// a = "aaa bbb ccc eee fff";
+// a = a.split(" ");
+// for (let i = 1; i < a.length; i += 2) {
+//   let firstLetter = a[i].charAt(0).toUpperCase();
+//   let restWord = a[i].slice(1);
+//   const totall = firstLetter + restWord;
+//   a.splice(i, 1, totall);
+// }
+// a = a.join(' ')
+// console.log(a);
 
-a = 'aaa bbb ccc eee fff';
+// // Дана некоторая строка:  'a bc def ghij' Переведите в верхний регистр все подстроки, в которых количество букв меньше или равно трем.
+// // В нашем случае должно получится следующее: 'A BC DEF ghij'
+// a = "a bc def ghij";
+// b = a.split(" ").map((element) => {
+//   if (element.length <= 3) {
+//     return element.toUpperCase();
+//   }
+//   return element;
+// });
+// b = b.join(' ')
+// console.log(b);
+
+// // Дан символ. Узнайте, в каком регистре этот символ - в верхнем или нижнем.
+// a = 'F'
+// if( a === a.toUpperCase()) {console.log(`символ ${a} у верхньому регістрі`);} else {console.log(`символ ${a} у нижньому регістрі`)}
+
+// // Дано некоторое число, например, такое: 123789 Удалите из этого числа все нечетные цифры.
+// // В нашем случае получится такой результат: 28
+// a = 123789;
+// a = a.toString().split("");
+// for (i = 0; i < a.length; i++) {
+//   if (a[i] % 2 !== 0) {
+//     a.splice(i, 1);
+//     i--
+//   }
+// }
+// a = a.join('')
+// console.log(a);
