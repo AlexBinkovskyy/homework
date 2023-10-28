@@ -2878,12 +2878,129 @@
 //       31, 32, 33, 34, 35, 6, 37, 3748, 39, 40, 0.5,
 //     ];
 
-//    a.every(item => item.toString().includes('3')) ? console.log(true) : console.log(false); 
+//    a.every(item => item.toString().includes('3')) ? console.log(true) : console.log(false);
 //     // console.log(a);
 
-Дана строка в формате:
+// // Дана строка в формате: Преобразуйте ее в формат: 'snake_case'
+// a = 'kebab-case'
+// a = a.replace('-', '_')
+// console.log(a);
 
-'kebab-case'
-Преобразуйте ее в формат:
+// // Дана строка в формате: Преобразуйте ее в формат:'camelCase'
+// a = "snake_case";
+// a = a
+//   .split("_")
+//   .map((item, idx) =>
+//     idx !== 0 ? item.charAt(0).toUpperCase() + item.slice(1) : item
+//   )
+//   .join("");
+// console.log(a);
 
-'snake_case'
+// // Дана строка в формате: Преобразуйте ее в формат: 'snake_case'
+// a = 'camelCase';
+// a = a.split('').map((item, idx, arr) => item === item.toUpperCase() ? '_' + item : item).join('')
+// console.log(a);
+
+// // Сформируйте с помощью циклов следующий массив:
+// // [
+// // 	[1, 2, 3],
+// // 	[1, 2, 3],
+// // 	[1, 2, 3],
+// // 	[1, 2, 3],
+// // 	[1, 2, 3],
+// // ]
+
+// let a = [];
+// let total = []
+// for(i=1; i<=3; i++) {
+//     total.push(i)
+// } while (a.length <= 4) {
+//     a.push(total)
+// }
+// console.log(a);
+// console.log(total);
+
+// // Дана строка. Проверьте, что эта строка состоит только из цифр.
+// a = "5555ф5";
+// function foo(str) {
+//     let total = 0;
+//     b = str.split('')
+//    for (item of b) {
+//     if(!isNaN(parseInt(item))) {
+//         total += 1
+//     }
+//    }
+//    if (total === b.length) {
+//     console.log("рядок лише з цифр");
+//    } else {console.log("рядок не лише з цифр");}
+// }
+// foo(a)
+
+// // Дана строка. Проверьте, что эта строка состоит только из четных цифр.
+// a = "22";
+// function foo(str) {
+//   for (item of str.split("")) {
+//     if (!isNaN(parseInt(item)) && item % 2 === 0) {
+//       continue;
+//     } else {
+//       return "рядок містить непарні числа, або містить букви чи символи";
+//     }
+//   }
+//   return "усі числа парні";
+// }
+// console.log(foo(a));
+
+// // Дан массив со числами. Удалите из него числа, имеющие два и более нуля.
+// let a = [
+//         1, 12, 1, 1004, 1500, 16, 7, 17, 9, 20569, 21, 2, 200003, 24, 5, 26, 27, 27, 29, 30,
+//         31, 32, 33, 34, 35, 6, 37, 374008, 30009, 40, 0.5,
+//       ];
+// function editArr(array) {
+//  b = array.filter(item => !item.toString().includes('00'))
+//  console.log(b);
+// }
+// console.log(editArr(a))
+
+// // Найдите все числа от 1 до 1000, сумма цифр которых равна 13.
+// for (i = 1; i <= 1000; i++) {
+//   a = i
+//     .toString()
+//     .split("")
+//     .map((item) => parseInt(item));
+//   if (a.reduce((total, num) => (total += parseInt(num))) === 13) {
+//     console.log(`${i}, ${a.join(' + ')} = 13`);
+//   }
+// }
+// ___________________________________________
+// for (i = 1; i <= 1000; i++) {
+//   number = i;
+//   totall = 0;
+//   while (number > 0) {
+//     totall += number % 10;
+//     number = Math.floor(number / 10)
+//   }
+//   if (totall  === 13) {
+//     console.log(`Сума чисел ${i} = 13`);
+//   }
+// }
+
+// // Сформируйте с помощью циклов следующий массив:
+// // [
+// // 	[1, 2, 3],
+// // 	[4, 5, 6],
+// // 	[7, 8, 9],
+// // ]
+// const rows = 3;
+// const cols = 3;
+// let counter = 1;
+// const resultArray = [];
+
+// for (let i = 0; i < rows; i++) {
+//   const row = [];
+//   for (let j = 0; j < cols; j++) {
+//     row.push(counter);
+//     counter++;
+//   }
+//   resultArray.push(row);
+// }
+// console.log(resultArray);
