@@ -3285,3 +3285,13 @@
 // // Will run second
 // console.log("After promise.then()");
 
+const input = document.querySelector('.js-input')
+input.addEventListener('input', onChange)
+console.log(input.value)
+
+function onChange(evt){
+    evt.defaultPrevented;
+    console.info(evt)
+    console.log(evt.target.isCheked())
+    // evt.target.value = defaultValue;
+}
