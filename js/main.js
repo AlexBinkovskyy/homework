@@ -3285,13 +3285,60 @@
 // // Will run second
 // console.log("After promise.then()");
 
-const input = document.querySelector('.js-input')
-input.addEventListener('input', onChange)
-console.log(input.value)
+// const input = document.querySelector('.js-input')
+// input.addEventListener('input', onChange)
+// console.log(input.value)
 
-function onChange(evt){
-    evt.defaultPrevented;
-    console.info(evt)
-    console.log(evt.target.isCheked())
-    // evt.target.value = defaultValue;
-}
+// function onChange(evt){
+//     evt.defaultPrevented;
+//     console.info(evt)
+//     console.log(evt.target.isCheked())
+//     evt.target.value = defaultValue;
+// }
+
+// const arr1 = [1, 3, 5, 6, 9, 5, 2, 3, 6, 4, 7, 8, 9, 2, 32, 6, 54, 6, 54, 32, 7, 35];
+// const arr2 = [45, 32, 65, 78, 541, 216, 5, 1, 2, 7, 5, 2, 6, 4, 6, 78, 9, 2, 1, 3];
+
+// function findCommonElements(arr1, arr2) {
+//     const commonElements = [];
+//     for (let i = 0; i < arr1.length; i++) {
+//         for (let j = 0; j < arr2.length; j++) {
+//             if (arr1[i] === arr2[j] && commonElements.indexOf(arr1[i]) === -1) {
+//                 commonElements.push(arr1[i]);
+//             }
+//         }
+//     }
+//     return commonElements;
+// }
+
+// function findCommonElements(arr1, arr2) {
+//     const arr1Un = new Set(arr1);
+//     const arr2Un = new Set(arr2);
+//     // console.log(arr1Un);
+//     const commonElements = Array.from(arr1Un.values()).filter((key) => arr2Un.has(key));
+//     return commonElements;
+// }
+
+// console.log(findCommonElements(arr1, arr2));
+// [1, 3, 5, 6, 9, 2, 4, 7, 32];
+
+// const array = [
+//   { color: "white", id: 2 },
+//   { color: "black", id: 3 },
+//   { color: "white", id: 9 },
+// ];
+ 
+
+// function a (arr){
+//     arr.map(item => {
+//         let b = {}
+//         b[item.id] = item
+//         output[item.color] = b
+//     })
+// }
+
+// let output = function a(arr) {
+//   return arr.reduce((acc, item) => ({ ...acc, [item['color']] : {...acc[item['color']], [item['id']]: item} }), {});
+// }
+
+// console.log(output(array));
