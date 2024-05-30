@@ -3327,7 +3327,6 @@
 //   { color: "black", id: 3 },
 //   { color: "white", id: 9 },
 // ];
- 
 
 // function a (arr){
 //     arr.map(item => {
@@ -3342,3 +3341,67 @@
 // }
 
 // console.log(output(array));
+
+// const arr = [-1, -2, -4, 0, 1, 2, -3];
+
+// let res = 0;
+
+// // const f = (arr) => {
+// //   for (const i of arr) {
+// //     i < 0 ? (res += 1) : res;
+// //   }
+// // };
+// // f(arr);
+
+// arr.reduce((acc, item) => {
+//   item < 0 ? (res += 1) : res;
+// }, 0);
+
+// console.log(res);
+
+// function outerFunction() {
+//   let outerVariable = "I am from outer function";
+
+//   function innerFunction() {
+//     function innFunc() {
+//       console.log(outerVariable);
+//     }
+//     return innFunc;
+// }
+// return innerFunction;
+
+// }
+
+// outerFunction()()() // Викликаємо зовнішню функцію
+
+// // Викликаємо замикання, яке зберегло доступ до outerVariable
+// // Виведе: "I am from outer function"
+
+// const meetups = [
+//   { name: "JavaScript", isActive: true, members: 100 },
+//   { name: "Angular", isActive: true, members: 900 },
+//   { name: "Node", isActive: false, members: 600 },
+//   { name: "React", isActive: true, members: 500 },
+// ];
+// const fff = (meetups) =>
+//   meetups
+//     .filter((meetup) => meetup.isActive)
+//     .reduce((acc, item) => acc + item.members, 0);
+// console.log(fff(meetups));
+
+// const fff = (meetups) => {
+//   let total = 0;
+//   meetups.filter((meetup) => {
+//     meetup.isActive ? total += meetup.members : total
+//   });
+//   return total
+// };
+// console.log(fff(meetups));
+
+// const selectElement = (selector) => document.querySelector(`${selector}`);
+// selectElement("button").onclick = () =>
+//   (selectElement(".text2").textContent = selectElement(".text1").textContent);
+
+// for (i = 0; i< 10; i++){
+//   setTimeout(()=>console.log(i), 0)
+// }
